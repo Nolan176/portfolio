@@ -1,0 +1,200 @@
+/* all code written in this css file is in reference to my practice file written during class, following precise tutorials by Paul Brokenshire. Any additional content learned online, or otherwise, will by cited throughout the code accordingly. */
+
+*{
+	box-sizing: border-box;
+}
+
+/* ------------ body content ----------- */
+
+body {
+	font-family: Helvetica, sans-serif;
+	background-color:#2C5043;
+	width: 100%;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, p, a, ol, ul{
+	margin-top: 0;
+	color: #F8F8F8;}
+
+h1{
+	margin-bottom: 60px;
+	font-weight: bold;
+	font-size: 80px;
+}
+
+h2{
+	margin-bottom: 30px;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+p{
+	font-size: 24px;
+	width:clamp(40%, 65ch, 100%);
+	margin-bottom: 4rem;
+}
+
+a{
+	font-weight: bold;
+}
+
+a:hover{
+	text-decoration-color: #FAFF13;
+	color:#FAFF13;
+}
+
+img{
+	height: auto;
+	max-width: 100%;
+	padding: 0rem;
+}
+
+
+[id]{
+	scroll-margin-top: 3ex;
+}
+
+/* --------------- main content ------------ */
+
+main{
+	padding: 0rem;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-gap: 0em 2em;
+}
+
+main section{
+	background-color: #2C5043;
+}
+
+/* --------------- grid content ------------ */
+
+.full-columns{
+	grid-column:auto/ span 4;
+}
+
+/* ----------- Header and Nav Styles --------- */
+
+header{
+	width: 100vw;
+}
+
+nav {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	padding: 0;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+nav a{
+	display: inline-block;
+	background-color: #2C5043;
+	font-size: 30px;
+	text-decoration: none;
+	padding: 1em;
+	margin: 0;
+	flex: 1 1 auto;
+	text-align: center;
+}
+
+nav a:hover{
+	color: #FAFF13;
+	background-color: #2C5043 ;
+}
+
+.heroImage{ 
+    position:relative;
+    padding: 0 120px 120px 120px;
+}
+
+#aboutMe{
+    position:relative;
+    padding: 0 120px 120px 120px;
+    Display: flex; /* ---------  Lake helped me with this --------*/
+    Flex-direction: row;
+    column-gap: 6rem;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio{
+    position:relative;
+    padding: 0 120px 0 120px;
+}
+
+.portfolioTitle{
+    position:relative;
+    padding: 0 0 120px 0;
+}
+
+.noboGallery{
+        position:relative;
+        padding: 0;
+}
+
+.gif, .image{
+    margin-bottom: 2rem;
+}
+
+.mediaRow{ /* ---------  Chat GPT helped me with this code for how to evenly spread out the media content --------*/
+    position:relative;
+    padding: 0 0 200px 0;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+/* ---------  Footer Style --------*/
+footer{
+    display: flex;
+	width: 100%;
+	height: 300px;
+	background-color: #FAFF13;
+	padding: 100px;
+    margin: 0;
+    justify-content: space-between;
+}
+
+footer p, footer a, footer h2{
+	color: #2C5043;
+	padding: 0rem;
+    width:clamp(40%, 22ch, 100%);
+}
+
+.hyperlinks p{
+padding: 0;
+margin: 0;
+}
+
+@media (max-width:60em){ 
+	.half-columns{
+		grid-column: auto / span 4;
+	}
+}
+
+@media (max-width:60em){ 
+	.full-columns{
+		grid-column: auto / span 4;
+	}
+}
+
+@media (max-width:60em){ 
+	.aboutMe{
+		grid-column: auto / span 4;
+	}
+}
+
+
+
+
