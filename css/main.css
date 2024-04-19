@@ -161,6 +161,9 @@ nav a:hover{
     padding: 0 120px 120px 120px;
 }
 
+.div{
+	margin-bottom: 4 rem
+}
 .mediaRow{ /* ---------  Chat GPT helped me with this code for how to evenly spread out the media content --------*/
     position:relative;
     padding: 0 0 200px 0;
