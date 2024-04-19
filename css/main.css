@@ -17,6 +17,12 @@ h1, h2, h3, h5, p, a, ol, ul{
 	margin-top: 0;
 	color: #F8F8F8;}
 
+	li{
+		font-size: 24px;
+		margin-top: 1rem;
+		margin-bottom:1rem;
+	}
+
 h4 {
 	margin-top: 0;
 	color: #2C5043;
@@ -49,11 +55,11 @@ a:hover{
 	color:#FAFF13;
 }
 
-/* img{
+img{
 	height: auto;
 	max-width: 100%;
 	padding: 0rem;
-} */
+}
 
 
 [id]{
@@ -161,12 +167,27 @@ nav a:hover{
     padding: 0 120px 120px 120px;
 }
 
-.div{
-	margin-bottom: 4 rem
+.styleguide{
+	margin-top: 120px;
+	display: flex;
+	flex-direction: column;
+	row-gap:120px;
 }
+
+
 .mediaRow{ /* ---------  Chat GPT helped me with this code for how to evenly spread out the media content --------*/
     position:relative;
     padding: 0 0 200px 0;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.mediaRow2{ 
+    position:relative;
+    padding: 0 0 0 0;
     display: flex;
     justify-content: space-between;
     flex: 1;
